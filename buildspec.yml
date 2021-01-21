@@ -38,3 +38,4 @@ artifacts:
     - title-wide.png
     - css/*
     - js/*
+    - node_modules/aws-sdk/*

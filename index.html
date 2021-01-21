@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Example app</title>
+  <title>Yus Lab</title>
   <meta name="description" content="" />
   <link href="css/styles.css" rel="stylesheet">
   <link href="css/gradients.css" rel="stylesheet">
@@ -65,17 +65,11 @@
     <div>
       <h2>Upload your csv file to start with:</h2>
       <br/>
-      <form
-        name="fileUploaderForm"
-        enctype="multipart/form-data"
-        onsubmit="uploadFile()"
-        method="put"
-      >
-        <input type="file" id="uploadedFile" />
-        <input type="submit" value="upload" />
-      </form>
-
+      <input class="file-upload" type="file" id="uploadedFileDiv" accept="image/*"/>
+      <div id="uploadButton" class="upload-button">Upload Image</div>
     </div>
+  </div>
+
   </div>
 </div>
 
@@ -84,7 +78,6 @@
 </footer>
 
 <script src="js/set-background.js"></script>
-<script src="https://sdk.amazonaws.com/js/aws-sdk-2.829.0.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 

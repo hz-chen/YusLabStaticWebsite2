@@ -189,3 +189,19 @@ footer .footer-contents {
     display: none;
   }
 }
+
+.upload-button {
+  padding: 2rem 2rem 0.5rem 0;
+  line-height: 21px;
+  cursor:pointer;
+}
+
+.upload-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.upload-button:active {
+  color: black;
+  box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+}
