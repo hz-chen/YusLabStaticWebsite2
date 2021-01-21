@@ -27,5 +27,12 @@ artifacts:
     - app.js
     - index.html
     - package.json
+    - 404.html
+    - browserconfig.xml
+    - icon.png
+    - robots.txt
+    - wite.webmanifest
+    - title.png
+    - title-wide.png
     - css/*
     - js/*
