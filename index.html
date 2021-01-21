@@ -58,16 +58,23 @@
   <div class="message">
     <div class="text">
       <h1>Welcome to a simple website for Yu's Lab!</h1>
+    </div>
+  </div>
+
+  <div class="message">
+    <div>
       <h2>Upload your csv file to start with:</h2>
       <br/>
       <form
+        name="fileUploaderForm"
         enctype="multipart/form-data"
-        action="fileUpload()"
+        onsubmit="uploadFile()"
         method="post"
       >
-        <input type="file" name="myFile" />
+        <input type="file" id="uploadedFile" />
         <input type="submit" value="upload" />
       </form>
+
     </div>
   </div>
 </div>
@@ -77,6 +84,8 @@
 </footer>
 
 <script src="js/set-background.js"></script>
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.829.0.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
