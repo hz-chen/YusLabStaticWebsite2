@@ -1,4 +1,5 @@
 const AWS = require('aws-sdk');
+const { v4: uuidv4 } = require('uuid');
 
 const rawFileUploadS3UploadBucket = 'yu-lab-raw-file-upload';
 const bucketRegion = 'us-west-2';
@@ -29,11 +30,10 @@ function uploadFile() {
   console.log("got file: " + file);
 
   const fileName = file.name;
-  const fileKey = encodeURIComponent(fileName) + "/";
+  const fileKey = encodeURIComponent(fileName) + "_" + uuidv4() + "/";
 
   console.log("FileKey: " + fileKey);
 
-  // Use S3 ManagedUpload class as it supports multipart uploads
   const params = {
     Body: file,
     Bucket: rawFileUploadS3UploadBucket,
