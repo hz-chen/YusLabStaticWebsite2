@@ -39,4 +39,4 @@ artifacts:
     - css/*
     - js/*
     - node_modules/aws-sdk/*  # required for aws sdk
-    - node_modules/browserify # otherwise require won't work!
+    - node_modules/browserify/* # otherwise require won't work!
