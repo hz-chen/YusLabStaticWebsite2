@@ -6,7 +6,7 @@ phases:
       nodejs: 10
     commands:
       - echo Installing Mocha...
-      - npm install -g mocha
+      - npm install -g browserify
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
@@ -38,4 +38,5 @@ artifacts:
     - title-wide.png
     - css/*
     - js/*
-    - node_modules/aws-sdk/*
+    - node_modules/aws-sdk/*  # required for aws sdk
+    - node_modules/browserify # otherwise require won't work!
