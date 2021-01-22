@@ -15,6 +15,7 @@ phases:
     commands:
       - echo Build started
       - echo Compiling the Node.js code
+      - browserify js/main.js -o js/browserified-main.js
   post_build:
     commands:
       - echo Build completed
